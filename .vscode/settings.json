@@ -1,0 +1,22 @@
+{
+    "solidity.enabledAsLanguageServer": true,
+    "solidity.defaultCompiler": "localFile",
+    "solidity.compileUsingLocalVersion": "${env:HOME}/.svm/0.8.33/solc-0.8.33",
+    "solidity.packageDefaultDependenciesContractsDirectory": "src",
+    "solidity.packageDefaultDependenciesDirectory": "lib",
+    "solidity.remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "files.associations": {
+        "*.sol": "solidity"
+    },
+    "solidity.linter": "solhint",
+    "solidity.formatter": "prettier",
+    "editor.formatOnSave": true
+}
